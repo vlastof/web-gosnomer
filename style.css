@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('assets/fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/roboto/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('assets/fonts/roboto/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('assets/fonts/roboto/roboto-v20-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+
+/* nav */
+
+.nav-container {
+    margin: 0 auto;
+    background: #111111;
+    height: 80px;
+}
+
+nav {
+    margin: auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    min-width: 363px;
+}
+
+.nav-items li {
+    padding: 0 0 0 32px;
+    list-style: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ABAAB0;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+nav .logo .logo-accent {
+    color: #F5953D;
+    font-style: normal;
+}
+
+
+/*header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    background: #111111;
+    color: #FFFFFF;
+    height: calc(100vh - 80px);
+}
+
+.header-container p{
+    color: #ABAAB0;
+}
+
+.header-container p i{
+    font-style: normal;
+    color: #FFFFFF;
+}

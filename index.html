@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo"><i>инфо</i>-плюс</div>
-        <nav id="myTopnav">
-            <a href="#">О компании</a>
-            <a href="#">Цены</a>
-            <a href="#">Галерея</a>
-            <a href="#">Контакты</a>
-            <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">
-              </a>
+    <div class="nav-container">
+        <nav>
+            <div class="logo">
+                <p></p><i class="logo-accent">ИНФО</i>-ПЛЮС
+            </div>
+            <ul class="nav-items">
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+                <li>
+                    <a href="#">Цены</a>
+                </li>
+                <li>
+                    <a href="#">Галерея</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
         </nav>
-    </header>
+    </div>
+
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="hero-container">
+                    <h1>Номерные знаки</h1>
+                    <p>Изготовление дубликатов номерных знаков<br>
+                        Соответствие ГОСТ, высокое качество.<br>
+                        <i class="paragraph-accent">Доставка по всей России.</i>
+                    </p>
+                    <button class="order-btn">Оставить заявку</button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/photo-front.jpg" alt="фото номерных знаков">
+                </div>
+            </header>
+        </div>
+    </div>
 </body>
 </html>
