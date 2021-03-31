@@ -79,6 +79,13 @@ nav .logo .logo-accent {
 
 /*header*/
 
+.wrapper {
+ max-width: 1160px;
+ margin: 0 auto;
+ display: flex;
+ justify-content:space-between;
+}
+
 header {
     display: flex;
     align-items: center;
