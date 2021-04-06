@@ -251,6 +251,7 @@ header {
 
 .prices {
     height: 947px;
+    margin-top: 138px;
 }
 
 .prices > .container {
@@ -298,6 +299,7 @@ header {
 
 .attention {
     background-color: var(--title-color);
+    margin-top: 90px;
 }
 
 .attention-icon {
