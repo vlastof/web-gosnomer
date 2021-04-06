@@ -1,10 +1,90 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
+/* colors */
+
+:root {
+    --accent-color: #F5953D;
+    --title-color: #111111;
+    --body-color: #333333;
+    --secondary-on-white-color: #7B7A83;
+    --secondary-on-dark-color: #ABAAB0;
+    --icons-on-dark-color: #7B7A89;
+}
+
+/* typography */
 
 body {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--secondary-on-dark-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--secondary-on-dark-color);
+}
+
+.paragraph-accent {
+    color: #fff;
+    font-style: normal;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -0.01em;   
+}
+
+h2 {
+    color: var(--title-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 110%;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    color: var(--title-color);
+}
+
+.btn {
+    width: 183px;
+    height: 48px;
+    text-align: center;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
 }
 
 /* roboto-regular - latin_cyrillic */
@@ -79,30 +159,165 @@ nav .logo .logo-accent {
 
 /*header*/
 
-.wrapper {
- max-width: 1160px;
- margin: 0 auto;
- display: flex;
- justify-content:space-between;
+header {
+    background-color: var(--title-color);
+    color: white;
+    width: 100%;
+    height: calc(100vh + 50px);
+    display: flex;
+    align-items:center;
+    margin: -130px 0;
 }
 
-header {
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
-    align-items: center;
+    align-items: center;    
+}
+
+.hero-container {
+    display: flex;
+    height: 344px;
+    flex-direction: column;
+    flex-basis: 0;
     justify-content: space-between;
 }
 
-.header-container {
-    background: #111111;
-    color: #FFFFFF;
-    height: calc(100vh - 80px);
+.hero-image {
+    height: 557px;
 }
 
-.header-container p{
-    color: #ABAAB0;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
 }
 
-.header-container p i{
-    font-style: normal;
-    color: #FFFFFF;
+.col-xl-12 {
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+
+.col-xl-6 {
+    width: calc(50% - 40px);
+    margin: 20px;
+}
+
+.col-xl-5 {
+    width: calc((5 / 12 * 100%)  - 40px);
+    margin: 0 20px;
+}
+
+.col-xl-4 {
+    width: calc((4 / 12 * 100%)  - 40px);
+    margin: 0 20px;
+}
+
+
+.col-xl-3 {
+    width: calc((3 / 12 * 100%)  - 40px);
+    margin: 0 20px;
+}
+
+
+.col-xl-1 {
+    width: calc((1 / 12 * 100%)  - 40px);
+    margin: 0 20px;
+}
+
+
+.about{
+    margin: 263px auto 0 auto;
+    height:523px;
+}
+
+.container-about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.center {
+    margin: 0 auto;
+}
+
+
+.prices {
+    height: 947px;
+}
+
+.prices > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description {
+    width: 203px;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-about {
+    width: 70px;
+}
+
+.about-cards {
+    align-items: flex-start;
+}
+
+.card {
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28.5px;
+    border-radius: 8px;
+    border: 2px solid #FDE7D3;
+}
+
+.card-img {
+    width: 228px;
+    height: 139px;
+}
+
+.price {
+    color: var(--title-color);
+}
+
+.attention {
+    background-color: var(--title-color);
+}
+
+.attention-icon {
+    width: 78px;
+    height: 78px;
+}
+
+.attention-text {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.attention-text > h3 {
+    color: var(--secondary-on-dark-color);
+    margin: 0 0 0 20.8px;
+}
+
+.attention > .container > .row > .col-xl-12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
