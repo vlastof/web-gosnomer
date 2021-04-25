@@ -200,12 +200,12 @@ header {
 
 .col-xl-12 {
     width: calc(100% - 40px);
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .col-xl-6 {
     width: calc(50% - 40px);
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .col-xl-5 {
@@ -308,6 +308,13 @@ header {
 .attention {
     background-color: var(--title-color);
     margin-top: 90px;
+    height: 150px;
+    display: flex;
+}
+
+.attention > .container {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .attention-icon {
@@ -346,4 +353,63 @@ header {
 .gallery-img {
     width: 100%;
     border: 4px solid var(--accent-color);
+}
+
+.contacts {
+    color: #fff;
+    background-color: var(--title-color);
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.info {
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.city {
+    max-width: 391px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.info-map {
+    max-height: 450px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.info > h2, h3 {
+    color: #fff;
+}
+
+.city {
+    width: 100%;
+    display: flex;
+}
+
+
+.footer {
+    background-color: var(--title-color);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.created-by {
+    color: #fff;
+    width: 229px;
+    height: 22px;
+    margin: auto;
+}
+
+.created-by > a {
+    color: var(--accent-color);
 }
