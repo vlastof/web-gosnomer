@@ -87,6 +87,14 @@ button {
     background-color: var(--accent-color);
 }
 
+button:hover {
+    background-color: #FF9F47;
+}
+
+button:active {
+    background-color: #F57A08;
+}
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
     font-family: 'Roboto';
@@ -412,4 +420,18 @@ header {
 
 .created-by > a {
     color: var(--accent-color);
+}
+
+.changeCityBtn{
+    width: 188px;
+    height: 51px;
+    background-image: url("./assets/btnCity.svg");
+}
+
+.changeCityBtn:hover{
+    background-image: url("./assets/btnCityHover.svg");
+}
+
+.changeCityBtn:active{
+    background-image: url("./assets/btnCityClick.svg");
 }
